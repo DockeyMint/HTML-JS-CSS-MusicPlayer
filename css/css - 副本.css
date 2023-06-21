@@ -1,0 +1,61 @@
+/* */
+body{background: url(../images/网页背景.jpg)no-repeat;background-size: c;}
+/* banner-begin */
+/* 1.设置横幅样式*/
+.banner{width: 1000px;height: 250px;
+    background-image: url(../images/banner-background.png);
+    margin: 80px;opacity: 0.8;
+box-shadow: 10px 15px 15px 1px black;
+position: relative;
+}
+.banner ul li{list-style: none;
+display: inline-block;
+position: absolute;
+}
+/*2.设置明星头像样式和位置 */
+.banner ul li img{
+    border-radius:50% ;
+    /*移动至图片时鼠标变为手势 */
+}
+.tu1{top:30px; left: 78px;}
+.tu2{top:140px; left: 133px;}
+.tu3{top:67px; left: 241px;}
+.tu4{top:50px; left: 450px;}
+.tu5{top:160px; left: 530px;}
+/* banner-end */
+
+/* music-begin */
+/*1.设置详情页样式 */
+.music{width: 550px;height: 120px;
+background-color: black;
+position: relative;/*相对浏览器窗口位置 */
+left: 0px;top: 130px; opacity: 0.8;
+box-shadow: 10px 15px 15px 1px black;}
+.music .m-img{position: absolute; margin-top: 15px;margin-left: 10px;}
+.music .m-text{position: absolute;color:white;font-size: 20px;font-weight: bold;margin-top: 48px;margin-left:125px;}
+.music .m-btn{position: absolute;position: absolute;margin-left: 340px;}/*用绝对定位防止歌曲名称过长造成按钮位置超出 */
+.music .m-btn a{position: absolute;}
+/* 2.设置按钮样式以及鼠标经过状态*/
+.m-pre{background-image:url(../images/上一首.png);margin-top:  48px;margin-left: 0px;width: 33px;height: 31px;}
+.m-play{background-image:url(../images/播放.png);margin-top:   44px;margin-left: 60px;width: 31px;height:39px;}
+.m-next{background-image:url(../images/下一首.png);margin-top: 48px;margin-left: 116px;width: 33px;height:31px;}
+.m-pre:hover{background-image:url(../images/上一首选中.png);margin-top:  48px;margin-left: 0px;width: 33px;height: 29px;}
+.m-play:hover{background-image:url(../images/播放选中.png);margin-top:   44px;margin-left: 60px;width: 31px;height:39px;}
+.m-next:hover{background-image:url(../images/下一首选中.png);margin-top: 48px;margin-left: 116px;width: 33px;height:29px;}
+/* 3.设置最右边打开关闭音乐详情按钮*/
+.music .m-close{float: right;background-image: url(../images/收缩.png);width: 24px;height: 120px;margin-top: 2px;cursor: pointer;}
+/*4.添加暂停音乐类 */
+.m-pause{background-image: url(../images/暂停.png);margin-top:   44px;margin-left: 60px;width: 31px;height:37px;}
+.m-pause:hover{background-image: url(../images/暂停选中.png);margin-top:   44px;margin-left: 60px;width: 31px;height:39px;}
+/*5.添加图片旋转动画以及类 */
+@keyframes img_rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.img-rotate{animation:img_rotate 2s infinite linear ;}
+/*6.隐藏或显示播放器*/
+
+.m-open{float: right;background-image: url(../images/展开.png);width: 24px;height: 120px;margin-top: 2px;cursor: pointer;}
+/*  */
+
+/* music-end */
